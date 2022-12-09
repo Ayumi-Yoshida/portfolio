@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoshida Ayumi's Portfolio site</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Noto+Sans+JP:wght@400;500&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="index.html">
+            <img src="img/mylogo.svg" alt="ロゴ" />
+          </a>
+        </h1>
+        <nav>
+          <ul class="header-nav">
+            <li class="header-nav__item">
+              <a href="portfolio.html" class="header-nav__link">Portfolio</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="about.html" class="header-nav__link">About</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- //header-nav -->
+        <nav class="nav-drawer">
+          <ul class="nav-drawer__list">
+            <li class="nav-drawer__item">
+              <img src="./img/simbol-logo.svg" alt="シンボルロゴ" />
+            </li>
+            <li class="nav-drawer__item">
+              <a href="portfolio.html" class="nav-drawer__link">Portfolio</a>
+            </li>
+            <li class="nav-drawer__item">
+              <a href="about.html" class="nav-drawer__link">About</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- //nav-drawer -->
+        <div class="nav-drawer__burger">
+          <button class="burger-btn">
+            <span class="nav-drawer__burger-bars">
+              <span class="nav-drawer__burger-bar nav-drawer__bar-top"></span>
+              <span class="nav-drawer__burger-bar nav-drawer__bar-mid"></span>
+              <span
+                class="nav-drawer__burger-bar nav-drawer__bar-bottom"
+              ></span>
+            </span>
+          </button>
+        </div>
+        <!-- //nav-drawer -->
+      </div>
+    </header>
+    <!-- //header -->
+
+    <div class="fv" id="fv">
+      <div class="fv__inner">
+        <div class="fv__img-wrap">
+          <img src="img/fv-bg.jpg" alt="本人の写真" />
+        </div>
+        <div class="fv__copy">
+          <p class="fv__copy-ja">
+            物作りにまじめに、しなやかに<br />
+            あなたに実直に、前向きに
+          </p>
+          <p class="fv__copy-en">Portfolio</p>
+        </div>
+      </div>
+    </div>
+    <!-- //fv -->
+
+    <main id="main">
+      <div class="wrapper top-message">
+        <div class="wrapper__inner top-message__contant">
+          <p class="top-message__text">
+            <span class="top-message__main-color">吉田安祐美</span
+            >のポートフォリオサイトを閲覧頂きありがとうございます。<br />
+            接客業をしながら、Web制作にデザインを鍛えておりました。<br />
+            そのおかげで充実した日々を送っております。
+          </p>
+        </div>
+      </div>
+      <!-- //massage -->
+
+      <div class="wrapper top-portfolio">
+        <div class="wrapper__inner top-portfolio__inner">
+          <div class="top-page-heading center__title">
+            <p class="top-page-heading__en">Portfolio</p>
+            <p class="top-page-heading__ja">私の作品集</p>
+          </div>
+          <div class="top-portfolio__content">
+            <a
+              href="portfolio.html#tab1"
+              class="top-portfolio__block top-portfolio__web-site"
+            >
+              <span class="top-portfolio__link-label">
+                Web サイト
+              </span>
+            </a>
+            <a
+              href="portfolio.html#tab2"
+              class="top-portfolio__block top-portfolio__design"
+            >
+              <span class="top-portfolio__link-label">
+                Design
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio -->
+
+      <div class="wrapper top-about">
+        <a href="about.html">
+          <div class="wrapper__inner">
+            <div class="top-page-heading center__title">
+              <p class="top-page-heading__en">About</p>
+              <p class="top-page-heading__ja">私について</p>
+            </div>
+            <div class="top-about__content">
+              <!-- <a href=""></a> -->
+              <span class="top-about__link-label">
+                吉田安祐美<br />
+                1995年1月17日生まれ
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- //about -->
+
+      <div class="wrapper top-skill" id="skill">
+        <div class="wrapper__inner top-skill__inner">
+          <div class="top-page-heading">
+            <p class="top-page-heading__en">Skill</p>
+            <p class="top-page-heading__ja">できる事</p>
+          </div>
+          <div class="top-skill__content">
+            <div class="top-skill__block">
+              <div class="top-skill__img-wrapper">
+                <img src="img/skill_markup.png" alt="htmlとcssのアイコン" />
+              </div>
+              <p class="top-skill__text">
+                レスポンシブ対応、sass等基礎的なコーディングは可能です。このサイトもsassを使用しBEM記法で書いています。
+              </p>
+            </div>
+            <div class="top-skill__block">
+              <div class="top-skill__img-wrapper top-skill__img-wrapper--even">
+                <img
+                  src="img/javascript_icon_213796.png"
+                  alt="JavaScriptのアイコン"
+                />
+              </div>
+              <p class="top-skill__text">
+                複雑なコードをスクラッチで書けませんが、jQueryを使った基本的なコードが書けます。またこのサイトではjQueryだけではなく、GSAPも使用しています。
+              </p>
+            </div>
+            <div class="top-skill__block">
+              <div class="top-skill__img-wrapper">
+                <img src="img/skill_photoshop.png" alt="PhotoShopのアイコン" />
+              </div>
+              <p class="top-skill__text">
+                人物の切り抜き、写真加工など可能です。また、Photoshopを使ってバナー模写もしていたので、基本的な操作は可能です。
+              </p>
+            </div>
+            <div class="top-skill__block">
+              <div class="top-skill__img-wrapper top-skill__img-wrapper--even">
+                <img src="img/skill_illustrator.png" alt="XDのアイコン" />
+              </div>
+              <p class="top-skill__text">
+                ロゴの作成、イラストの作成をできるくらいには操作可能です。このサイトのロゴ、イラストは全てillustratorで作成しました。<br />
+              </p>
+            </div>
+            <div class="top-skill__block">
+              <div class="top-skill__img-wrapper top-skill__img-wrapper--even">
+                <img src="img/skill_XD.png" alt="XDのアイコン" />
+              </div>
+              <p class="top-skill__text">
+                デザインのワイヤーフレーム、カンプを作ることが可能です。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //skill -->
+    </main>
+    <!-- //main -->
+
+    <footer class="footer" id="footer">
+      <small>&copy;Yoshida Ayumi.</small>
+    </footer>
+    <!-- footer -->
+
+    <!-- 本来ならここにfvを置く -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

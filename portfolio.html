@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio -私の作品集-</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Noto+Sans+JP:wght@400;500&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="index.html">
+            <img src="img/mylogo.svg" alt="ロゴ" />
+          </a>
+        </h1>
+        <nav>
+          <ul class="header-nav">
+            <li class="header-nav__item">
+              <a href="portfolio.html" class="header-nav__link">Portfolio</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="about.html" class="header-nav__link">About</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- //header-nav -->
+        <nav class="nav-drawer">
+          <ul class="nav-drawer__list">
+            <li class="nav-drawer__item">
+              <img src="./img/simbol-logo.svg" alt="シンボルロゴ" />
+            </li>
+            <li class="nav-drawer__item">
+              <a href="portfolio.html" class="nav-drawer__link">Portfolio</a>
+            </li>
+            <li class="nav-drawer__item">
+              <a href="about.html" class="nav-drawer__link">About</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- //nav-drawer -->
+        <div class="nav-drawer__burger">
+          <button class="burger-btn">
+            <span class="nav-drawer__burger-bars">
+              <span class="nav-drawer__burger-bar nav-drawer__bar-top"></span>
+              <span class="nav-drawer__burger-bar nav-drawer__bar-mid"></span>
+              <span
+                class="nav-drawer__burger-bar nav-drawer__bar-bottom"
+              ></span>
+            </span>
+          </button>
+        </div>
+        <!-- //nav-drawer -->
+      </div>
+    </header>
+    <!-- //header -->
+
+    <main>
+      <h2 class="page-heading">
+        <div class="page-heading__en">Portfolio</div>
+        <div class="page-heading__ja">私の作品集</div>
+      </h2>
+      <!-- page-heading -->
+
+      <div class="tab-menu">
+        <ul id="tab1" class="tab-menu__list">
+          <li id="tab1" class="tab-menu__list-item color_web-site">
+            <span class="tab-menu__label">Web サイト</span>
+          </li>
+          <li id="tab2" class="tab-menu__list-item color_design">
+            <span class="tab-menu__label">design</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="portfolio wrapper">
+        <div class="portfolio__bg-color">
+          <div class="wrapper__inner">
+            <!-- is-active ↓のタグにクラスとして付与していた -->
+            <div class="portfolio__content tab__web-site">
+              <ul class="portfolio__list">
+                <li class="portfolio__link-item">
+                  <a href="portfolio-detail_web.html">
+                    <div class="portfolio__link-image">
+                      <img
+                        src="./img/portfolio-detail__thumbnail--pc.png"
+                        alt="ポートフォリオサイトのサムネイル"
+                      />
+                    </div>
+                    <span class="portfolio__link-label">
+                      ポートフォリオサイト
+                    </span>
+                  </a>
+                </li>
+                <li class="portfolio__link-item">
+                  <a href="portfolio-detail_web.html">
+                    <div class="portfolio__link-image">
+                      <img src="" alt="" />
+                    </div>
+                    <span class="portfolio__link-label">
+                      Nothing
+                    </span>
+                  </a>
+                </li>
+                <li class="portfolio__link-item">
+                  <a href="portfolio-detail_web.html">
+                    <div class="portfolio__link-image">
+                      <img src="" alt="" />
+                    </div>
+                    <span class="portfolio__link-label">
+                      Nothing
+                    </span>
+                  </a>
+                </li>
+                <li class="portfolio__link-item">
+                  <a href="portfolio-detail_web.html">
+                    <div class="portfolio__link-image">
+                      <img src="" alt="" />
+                    </div>
+                    <span class="portfolio__link-label">
+                      Nothing
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- //tab__web-site -->
+
+            <!-- ↓  付けてはいなかったが実験的にjs-hide付けている  -->
+            <div class="portfolio__content tab__design">
+              <ul class="portfolio__list">
+                <li class="portfolio__link-item">
+                  <a href="portfolio-detail_design.html">
+                    <div class="portfolio__link-image">
+                      <img src="./img/mylogo_thumbnail.jpg" alt="" />
+                    </div>
+                    <span class="portfolio__link-label">
+                      ポートフォリオサイトのロゴ
+                    </span>
+                  </a>
+                </li>
+                <li class="portfolio__link-item">
+                  <a href="portfolio-detail_design02.html">
+                    <div class="portfolio__link-image">
+                      <img src="./img/myname-card.jpg" alt="名刺" />
+                    </div>
+                    <span class="portfolio__link-label">
+                      自分の名刺
+                    </span>
+                  </a>
+                </li>
+                <li class="portfolio__link-item">
+                  <a href="portfolio-detail_design03.html">
+                    <div class="portfolio__link-image">
+                      <img src="./img/myWebsite_illust01.jpg" alt="" />
+                    </div>
+                    <span class="portfolio__link-label">
+                      ポートフォリオサイト趣味のイラスト
+                    </span>
+                  </a>
+                </li>
+                <li class="portfolio__link-item">
+                  <a href="portfolio-detail_design04.html">
+                    <div class="portfolio__link-image">
+                      <img src="./img/myWebsite_illust02.jpg" alt="" />
+                    </div>
+                    <span class="portfolio__link-label">
+                      ポートフォリオサイト自己prのイラスト
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- //tab__banner -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- //main -->
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <small>&copy;Yoshida Ayumi.</small>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

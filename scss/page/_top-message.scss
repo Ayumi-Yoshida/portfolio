@@ -1,0 +1,15 @@
+@use '../mixin/' as m;
+@use '../setting/variable' as var;
+
+.top-message {
+  &__text {
+    font-size: var.$base_font-size;
+    text-align: center;
+    @include m.mq(sp) {
+      font-size: var.$base-sp_font-size;
+    }
+  }
+  &__main-color {
+    color: var.$color_main;
+  }
+}

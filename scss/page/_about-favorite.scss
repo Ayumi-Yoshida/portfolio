@@ -1,0 +1,18 @@
+@use '../setting/variable' as var;
+@use '../mixin/' as m;
+
+.about-favorite {
+  .page-heading {
+    padding: 200px 0 80px;
+  }
+  &__text {
+    font-size: var.$base_font-size;
+    text-align: center;
+    @include m.mq(tab) {
+      font-size: var.$base-tab_font-size;
+    }
+    @include m.mq(sp) {
+      font-size: var.$base-sp_font-size;
+    }
+  }
+}

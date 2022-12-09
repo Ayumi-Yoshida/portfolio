@@ -1,0 +1,85 @@
+@use '../setting/variable' as var;
+@use '../mixin/' as m;
+
+.portfolio-detail {
+  &__el-hidden {
+    overflow: hidden;
+  }
+  padding-bottom: 200px;
+  position: relative;
+  &__content {
+    padding-top: 80px;
+  }
+  &__image-wrapper {
+    position: relative;
+    img:last-child {
+      padding-top: 40px;
+    }
+  }
+  &__main--image {
+    height: auto;
+  }
+  &__sub--image {
+    position: absolute;
+    bottom: -12%;
+    right: 1%;
+    width: 20%;
+  }
+  &__sub--image.w40 {
+    width: 32%;
+  }
+  &__explanation {
+    padding-top: 80px;
+    text-align: center;
+  }
+  &__explanation:last-child {
+    padding-bottom: 80px;
+  }
+  &__explanation-title {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    @include m.mq(tab) {
+      font-size: 2rem;
+    }
+    @include m.mq(sp) {
+      font-size: 1.6rem;
+    }
+  }
+  &__explanation-text {
+    font-size: 1.8rem;
+    @include m.mq(tab) {
+      font-size: var.$base-tab_font-size;
+    }
+    @include m.mq(sp) {
+      font-size: var.$base-sp_font-size;
+    }
+  }
+  &__explanation-memo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 42%;
+      padding-right: 16px;
+    }
+    img:last-of-type {
+      padding-right: 0;
+    }
+  }
+  &__explanation-image--block {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+  &__explanation-image--block.content-center {
+    justify-content: center;
+  }
+  &__explanation-image {
+    padding-right: 16px;
+    width: 26%;
+  }
+  &__explanation-image:last-of-type {
+    padding-right: 0;
+  }
+}

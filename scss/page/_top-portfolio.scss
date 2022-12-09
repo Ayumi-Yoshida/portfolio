@@ -1,0 +1,79 @@
+@use '../setting/variable' as var;
+@use '../mixin/' as m;
+
+.top-portfolio {
+  overflow-x: hidden;
+  &__inner {
+    position: relative;
+  }
+  .wrapper__inner {
+    border-top: 1px solid var.$color_black;
+    border-bottom: 1px solid var.$color_black;
+    height: 100%;
+    padding: 0;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__block {
+    height: 100vh;
+    width: 50%;
+    position: relative;
+    display: block;
+  }
+  &__web-site {
+    width: 50vw;
+    margin: 0 calc(50% - 50vw);
+  }
+  &__design {
+    width: 50vw;
+    margin: 0 calc(50% - 50vw);
+  }
+  &__web-site::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: var.$color_purple;
+    opacity: 0;
+    transition: all ease 0.5s;
+  }
+  &__web-site:hover::after {
+    opacity: 1;
+  }
+  &__design::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: var.$color_other-blue;
+    opacity: 0;
+    transition: all ease 0.5s;
+  }
+  &__design:hover::after {
+    opacity: 1;
+  }
+  &__link-label {
+    position: absolute;
+    left: 50%;
+    bottom: 4vh;
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    z-index: 3;
+    @include m.mq(tab) {
+      left: 45%;
+    }
+    @include m.mq(sp) {
+      left: 37%;
+    }
+  }
+}

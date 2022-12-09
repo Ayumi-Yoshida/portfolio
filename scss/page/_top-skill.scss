@@ -1,0 +1,49 @@
+@use '../mixin/' as m;
+@use '../setting/variable' as var;
+
+.top-skill {
+  &.wrapper {
+    padding-bottom: 0;
+  }
+  &__inner {
+    padding: 0 0 200px 0;
+  }
+  &__content {
+    padding: 0 24px;
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 24px 0;
+  }
+  &__block:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+  &__img-wrapper {
+    width: 26.4%;
+    padding-right: 24px;
+    @include m.mq(tab) {
+      margin: 0 auto;
+      padding-bottom: 80px;
+    }
+    @include m.mq(sp) {
+      width: 40%;
+    }
+  }
+  &__img-wrapper--even {
+    padding-right: 0;
+    padding-left: 24px;
+    @include m.mq(tab) {
+      padding-left: 0;
+    }
+  }
+  &__text {
+    width: calc(100% - 32%);
+    font-size: var.$base_font-size;
+    word-break: break-all;
+    @include m.mq(sp) {
+      font-size: var.$base-sp_font-size;
+      width: 54%;
+    }
+  }
+}

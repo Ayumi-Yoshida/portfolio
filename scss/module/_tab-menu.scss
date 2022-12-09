@@ -1,0 +1,28 @@
+@use '../setting/variable' as var;
+
+.tab-menu {
+  padding: 80px 0 0;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list-item {
+    padding: 40px 0;
+    text-align: center;
+    list-style: none;
+    width: 50%;
+    cursor: pointer;
+  }
+  &__label {
+    font-size: 2rem;
+  }
+}
+
+.color_web-site {
+  background-color: var.$color_purple;
+}
+
+.color_design {
+  background-color: var.$color_other-blue;
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>作品の詳細</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Noto+Sans+JP:wght@400;500&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="index.html">
+            <img src="img/mylogo.svg" alt="ロゴ" />
+          </a>
+        </h1>
+        <nav>
+          <ul class="header-nav">
+            <li class="header-nav__item">
+              <a href="portfolio.html" class="header-nav__link">Portfolio</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="about.html" class="header-nav__link">About</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- //header-nav -->
+        <nav class="nav-drawer">
+          <ul class="nav-drawer__list">
+            <li class="nav-drawer__item">
+              <img src="./img/simbol-logo.svg" alt="シンボルロゴ" />
+            </li>
+            <li class="nav-drawer__item">
+              <a href="portfolio.html" class="nav-drawer__link">Portfolio</a>
+            </li>
+            <li class="nav-drawer__item">
+              <a href="about.html" class="nav-drawer__link">About</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- //nav-drawer -->
+        <div class="nav-drawer__burger">
+          <button class="burger-btn">
+            <span class="nav-drawer__burger-bars">
+              <span class="nav-drawer__burger-bar nav-drawer__bar-top"></span>
+              <span class="nav-drawer__burger-bar nav-drawer__bar-mid"></span>
+              <span
+                class="nav-drawer__burger-bar nav-drawer__bar-bottom"
+              ></span>
+            </span>
+          </button>
+        </div>
+        <!-- //nav-drawer -->
+      </div>
+    </header>
+    <!-- //header -->
+
+    <main>
+      <div class="portfolio-detail__heading-bg--web-site">
+        <h2 class="page-heading">
+          <div class="page-heading__en">ポートフォリオサイト</div>
+          <div class="page-heading__ja">私の作品</div>
+        </h2>
+      </div>
+      <!-- page-heading -->
+
+      <div class="portfolio-detail">
+        <div class="portfolio-detail--bg__web-site">
+          <div class="portfolio-detail__content wrapper__inner">
+            <div class="portfolio-detail__image-wrapper">
+              <img
+                src="img/portfolio-detail__thumbnail--pc.png"
+                class="portfolio-detail__main--image"
+                alt="パソコンのモックアップ"
+              />
+              <img
+                src="img/mock_iPhone.png"
+                class="portfolio-detail__sub--image"
+                alt="iphoneのモックアップ"
+              />
+            </div>
+            <!-- portfolio-detail__image-wrapper -->
+
+            <div class="portfolio-detail__explanation">
+              <p class="portfolio-detail__explanation-title">
+                コンセプト
+              </p>
+              <div class="portfolio-detail__explanation-text">
+                このサイトを見ていただく担当者の方が見やすいように意識して作りました。<br />
+                シンプルだけど、温かみも感じられる配色にしました。
+              </div>
+            </div>
+            <!-- // portfolio-detail__explanation-text -->
+
+            <div class="portfolio-detail__explanation">
+              <p class="portfolio-detail__explanation-title">
+                使用ツールと言語
+              </p>
+              <div class="portfolio-detail__explanation-image--block">
+                <div class="portfolio-detail__explanation-image">
+                  <img src="img/skill_photoshop.png" alt="Photoshopアイコン" />
+                </div>
+                <div class="portfolio-detail__explanation-image">
+                  <img
+                    src="img/skill_illustrator.png"
+                    alt="Illustratorアイコン"
+                  />
+                </div>
+                <div class="portfolio-detail__explanation-image">
+                  <img src="img/skill_XD.png" alt="XD画像" />
+                </div>
+                <div class="portfolio-detail__explanation-image">
+                  <img
+                    src="img/javascript_icon_213796.png"
+                    alt="JavaScript画像"
+                  />
+                </div>
+                <div class="portfolio-detail__explanation-image">
+                  <img src="img/sass_icon_130835.png" alt="JavaScript画像" />
+                </div>
+              </div>
+            </div>
+            <!-- // portfolio-detail__explanation -->
+
+            <div class="portfolio-detail__explanation">
+              <p class="portfolio-detail__explanation-title">
+                制作にあたっての考え
+              </p>
+              <ol class="portfolio-detail__explanation-list">
+                <li class="portfolio-detail__explanation-item">
+                  <p class="portfolio-detail__explanation-item--text">
+                    配色を決めるに当たって、自分の生年月日で決めました。<br />
+                    私は1995年1月17日産まれで、雪と阪神淡路大震災が浮かびました。ですが寒色や悲劇で終わらせたくなくて、
+                    希望、温かみを感じるオレンジ色を入れたくて、pintrestで朝焼けのような雪景色の写真を、そこから色をとりました。<br />
+                    このサイトの色すべてその写真から取っています。
+                  </p>
+                </li>
+                <li class="portfolio-detail__explanation-item">
+                  <p class="portfolio-detail__explanation-item--text">
+                    フォントの選定は、シンプル、シンプルを壊さない可愛さも入れたくて、日本語はNoto
+                    Sans Japanと游ゴシック、
+                    英語はQuicksandと、見出しはインパクトも加えてMontserratにしました。
+                  </p>
+                </li>
+                <li class="portfolio-detail__explanation-item">
+                  <p class="portfolio-detail__explanation-item--text">
+                    ぱっと見でレスポンシブ対応をしているかモックアップでスマホのファーストビューを載せ、表現しました。
+                  </p>
+                </li>
+                <li class="portfolio-detail__explanation-item">
+                  <p class="portfolio-detail__explanation-item--text">
+                    8の倍数または4の倍数で余白、コンテンツを作成しました。<br />
+                    汎用的なスクリーンのサイズの基準に合わせやすい(例えばフルHD解像度の1920×1080pxは両方8の倍数である)ので、
+                    あとから、作成したサイトのコンテンツの数や形が変わっても、このルールがあれば柔軟に対応しやすいそうです。
+                    <a
+                      href="https://yuyakinoshita.com/blog/2019/02/10/design-by-multiple-of-8/#toc-6"
+                      target="_blank"
+                      >こちらの方の記事</a
+                    >
+                    を参考にしました。
+                  </p>
+                </li>
+                <li class="portfolio-detail__explanation-item">
+                  <p class="portfolio-detail__explanation-item--text">
+                    写真は自分のサイトで目を引きたいので自分の写真を使用しています。またそれだけではなく、写真の向いている視線の方向(左は過去を、右は未来をイメージさせられる)を意識してセレクトしました。
+                    <a
+                      href="https://yuyakinoshita.com/blog/2019/02/10/design-by-multiple-of-8/#toc-6"
+                      target="_blank"
+                      >こちらの方の記事</a
+                    >
+                    を参考にしました。
+                  </p>
+                </li>
+              </ol>
+              <!-- // portfolio-detail__explanation-list -->
+            </div>
+
+            <div class="portfolio-detail__explanation">
+              <p class="portfolio-detail__explanation-title">
+                作った振り返り
+              </p>
+              <div class="portfolio-detail__explanation-text">
+                始めて自分でデザインから一から作り上げました。デザインや配色を考える時に自分らしさや自分はどういう人間なのかなど考えられました。
+                転職活動の前にこういう事を考えられていい機会でもありました。自分の作品が増えるにつれて、改修していきたいと思っています。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <small>&copy;Yoshida Ayumi.</small>
+    </footer>
+    <!-- footer -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

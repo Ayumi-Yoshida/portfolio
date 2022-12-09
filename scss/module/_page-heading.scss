@@ -1,0 +1,45 @@
+@use '../setting/variable' as var;
+@use '../mixin/' as m;
+
+.top-page-heading,
+.page-heading {
+  text-align: center;
+  letter-spacing: 0.1em;
+  &__en {
+    font-size: 4.4rem;
+    font-weight: bold;
+    line-height: 2;
+    text-transform: uppercase;
+    @include m.mq(tab) {
+      font-size: 4rem;
+    }
+    @include m.mq(sp) {
+      font-size: 3.6rem;
+    }
+  }
+  &__ja {
+    font-size: 1.6rem;
+    font-weight: bold;
+    @include m.mq(tab) {
+      font-size: 1.4rem;
+    }
+    @include m.mq(sp) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.center__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 3;
+}
+
+.page-heading {
+  padding-top: calc(var.$header_height + 20rem);
+  @include m.mq(sp) {
+    padding-top: calc(var.$header_height + 10rem);
+  }
+}

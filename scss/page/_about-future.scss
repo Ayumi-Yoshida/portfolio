@@ -1,0 +1,19 @@
+@use '../setting/variable' as var;
+@use '../mixin/' as m;
+
+.about-future {
+  .page-heading {
+    padding: 200px 0 80px;
+  }
+  &__text {
+    text-align: center;
+    font-size: var.$base_font-size;
+    word-break: break-all;
+    @include m.mq(tab) {
+      font-size: var.$base-tab_font-size;
+    }
+    @include m.mq(sp) {
+      font-size: var.$base-sp_font-size;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@use '../setting/variable' as var;
+@use '../mixin/' as m;
+
+.about-me {
+  text-align: center;
+  &__name {
+    color: var.$color_main;
+    font-size: 2.4rem;
+    letter-spacing: 0.1em;
+    line-height: 2;
+    @include m.mq(sp) {
+      font-size: 2rem;
+    }
+  }
+  &__detail {
+    font-size: 1.8rem;
+    @include m.mq(sp) {
+      font-size: 1.4rem;
+    }
+  }
+}

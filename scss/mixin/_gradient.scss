@@ -1,0 +1,73 @@
+// shadow
+@mixin gradient($modifer: "header") {
+  @if $modifer == "header" {
+    background: linear-gradient(
+      to bottom,
+      rgb(255, 255, 255) 56%,
+      rgba(255, 255, 255, 0.8) 72%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  } @else if $modifer == "header-logo_bg" {
+    background: radial-gradient(
+      circle at 18px 94px,
+      rgba(255, 255, 255, 1) 0% 26%,
+      rgba(255, 255, 255, 0) 68% 100%
+    );
+  } @else if $modifer == "header-logo_bg-sp" {
+    background: radial-gradient(
+      circle at 0 33px,
+      rgba(255, 255, 255, 1) 0% 14%,
+      rgba(255, 255, 255, 0) 68% 100%
+    );
+  } @else if $modifer == "header-logo_bg-tab" {
+    background: radial-gradient(
+      circle at 0 85px,
+      rgb(255, 255, 255) 0% 14%,
+      rgba(255, 255, 255, 0) 68% 100%
+    );
+  } @else if $modifer == "nav-drawer_bg" {
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 1) 90%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  } @else if $modifer == "bg-web_color" {
+    background: linear-gradient(
+      to top,
+      rgba(170, 162, 214, 0.1) 0%,
+      rgba(170, 162, 214, 1) 50%,
+      rgba(170, 162, 214, 0.1) 100%
+    );
+  } @else if $modifer == "bg-web_before-color" {
+    background: linear-gradient(
+      to top,
+      rgba(170, 162, 214, 0.1) 0%,
+      rgba(170, 162, 214, 0) 100%
+    );
+  } @else if $modifer == "bg-web_after-color" {
+    background: linear-gradient(
+      to bottom,
+      rgba(170, 162, 214, 0.1) 0%,
+      rgba(170, 162, 214, 0) 100%
+    );
+  } @else if $modifer == "bg-banner_color" {
+    background: linear-gradient(
+      to top,
+      rgba(172, 187, 239, 0.1) 0%,
+      rgba(172, 187, 239, 1) 50%,
+      rgba(172, 187, 239, 0.1) 100%
+    );
+  } @else if $modifer == "bg-banner_before-color" {
+    background: linear-gradient(
+      to top,
+      rgba(172, 187, 239, 0.1) 0%,
+      rgba(172, 187, 239, 0) 100%
+    );
+  } @else if $modifer == "bg-banner_after-color" {
+    background: linear-gradient(
+      to bottom,
+      rgba(172, 187, 239, 0.1) 0%,
+      rgba(172, 187, 239, 0) 100%
+    );
+  }
+}

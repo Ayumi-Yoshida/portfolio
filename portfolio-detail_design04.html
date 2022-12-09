@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>作品の詳細</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Noto+Sans+JP:wght@400;500&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="index.html">
+            <img src="img/mylogo.svg" alt="ロゴ" />
+          </a>
+        </h1>
+        <nav>
+          <ul class="header-nav">
+            <li class="header-nav__item">
+              <a href="portfolio.html" class="header-nav__link">Portfolio</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="about.html" class="header-nav__link">About</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- //header-nav -->
+        <nav class="nav-drawer">
+          <ul class="nav-drawer__list">
+            <li class="nav-drawer__item">
+              <img src="./img/simbol-logo.svg" alt="シンボルロゴ" />
+            </li>
+            <li class="nav-drawer__item">
+              <a href="portfolio.html" class="nav-drawer__link">Portfolio</a>
+            </li>
+            <li class="nav-drawer__item">
+              <a href="about.html" class="nav-drawer__link">About</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- //nav-drawer -->
+        <div class="nav-drawer__burger">
+          <button class="burger-btn">
+            <span class="nav-drawer__burger-bars">
+              <span class="nav-drawer__burger-bar nav-drawer__bar-top"></span>
+              <span class="nav-drawer__burger-bar nav-drawer__bar-mid"></span>
+              <span
+                class="nav-drawer__burger-bar nav-drawer__bar-bottom"
+              ></span>
+            </span>
+          </button>
+        </div>
+        <!-- //nav-drawer -->
+      </div>
+    </header>
+    <!-- //header -->
+
+    <main class="portfolio-detail__el-hidden">
+      <div class="portfolio-detail__heading-bg--banner">
+        <h2 class="page-heading">
+          <div class="page-heading__en">
+            ポートフォリオサイト内の自己prのイラスト
+          </div>
+          <div class="page-heading__ja">私の作品</div>
+        </h2>
+      </div>
+      <!-- page-heading -->
+
+      <div class="portfolio-detail">
+        <div class="portfolio-detail--bg__design">
+          <div class="portfolio-detail__content wrapper__inner">
+            <div class="portfolio-detail__image-wrapper">
+              <img
+                src="./img/myWebsite_illust02.jpg"
+                class="portfolio-detail_main--image"
+                alt="ポートフォリオサイト内のイラスト集"
+              />
+            </div>
+            <!-- portfolio-detail__image-wrapper -->
+
+            <div class="portfolio-detail__explanation">
+              <p class="portfolio-detail__explanation-title">
+                Memo
+              </p>
+              <div class="portfolio-detail__explanation-text">
+                ポートフォリオサイト趣味のイラストと基本的には同じです。ただこのイラストは店内にいるシチュエーションなので、影の表現はありません。
+                文面にあうイラストを書くときは、Pinterestで検索して参考にしながら完成させました。
+              </div>
+            </div>
+            <!-- // portfolio-detail__explanation-text -->
+
+            <div class="portfolio-detail__explanation">
+              <p class="portfolio-detail__explanation-title">
+                使用ツール
+              </p>
+              <div
+                class="portfolio-detail__explanation-image--block content-center"
+              >
+                <div class="portfolio-detail__explanation-image">
+                  <img
+                    src="img/skill_illustrator.png"
+                    alt="illustratorアイコン"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- // portfolio-detail__explanation -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <small>&copy;Yoshida Ayumi.</small>
+    </footer>
+    <!-- footer -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

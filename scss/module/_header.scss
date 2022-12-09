@@ -1,0 +1,56 @@
+@use '../setting/variable' as var;
+@use '../mixin/' as m;
+
+.header {
+  height: var.$header_height;
+  padding: 80px 40px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  @include m.gradient("header");
+  z-index: 10;
+  @include m.mq(sp) {
+    padding: 5vw 5vw 0;
+    height: 7.2rem;
+  }
+  &__logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: -1;
+  }
+
+  &__logo a {
+    @include m.gradient("header-logo_bg");
+    width: 148px;
+    height: 224px;
+    border-radius: 0 0 50% 0;
+    display: flex;
+    align-items: center;
+    @include m.mq(tab) {
+      @include m.gradient("header-logo_bg-tab");
+      width: 108px;
+      height: 200px;
+    }
+    @include m.mq(sp) {
+      @include m.gradient("header-logo_bg-sp");
+      width: 100px;
+      height: 124px;
+    }
+  }
+
+  &__logo img {
+    width: 100px;
+    padding-left: 40px;
+    @include m.mq(tab) {
+      padding-left: 40px;
+      width: 91px;
+    }
+    @include m.mq(sp) {
+      width: 56px;
+      padding-left: 5vw;
+    }
+  }
+}

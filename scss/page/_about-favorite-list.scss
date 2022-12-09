@@ -1,0 +1,39 @@
+@use '../setting/variable' as var;
+@use '../mixin/' as m;
+
+.about-favorite-list {
+  padding-top: 80px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  &__item {
+    width: 32%;
+    margin: 80px 80px 0;
+    list-style: none;
+    img {
+      border: 1px solid var.$color_black;
+    }
+    @include m.mq(tab) {
+      margin: 80px 40px 0;
+    }
+    @include m.mq(sp) {
+      margin: 80px 16px 0;
+    }
+  }
+  &__item:last-of-type {
+    @include m.mq(tab) {
+      padding-bottom: 0;
+    }
+  }
+  &__text {
+    font-size: var.$base_font-size;
+    @include m.mq(tab) {
+      font-size: var.$base-tab_font-size;
+      text-align: center;
+    }
+    @include m.mq(sp) {
+      font-size: var.$base-sp_font-size;
+    }
+  }
+}

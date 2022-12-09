@@ -1,0 +1,19 @@
+@use '../mixin/' as m;
+
+.about__page-visual {
+  margin: 8px 0 0;
+  width: 100%;
+  height: 400px;
+  background-image: url("../img/about-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 1800px auto;
+  background-position: top 17% right 0;
+  @include m.mq(tab) {
+    background-position: top 24% right 16%;
+    height: 320px;
+  }
+  @include m.mq(sp) {
+    background-position: top 29% right 38%;
+    height: 240px;
+  }
+}

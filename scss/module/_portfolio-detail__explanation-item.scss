@@ -1,0 +1,36 @@
+@use '../setting/variable' as var;
+@use '../mixin/' as m;
+
+.portfolio-detail__explanation-item {
+  font-size: var.$base_font-size;
+  padding-top: 40px;
+  padding-left: 8px;
+  word-break: break-word;
+  &:first-child {
+    padding-top: 0;
+  }
+  &::marker {
+    font-size: 2.4rem;
+    font-weight: bold;
+    @include m.mq(tab) {
+      font-size: 2rem;
+    }
+    @include m.mq(sp) {
+      font-size: 1.6rem;
+    }
+  }
+  @include m.mq(tab) {
+    font-size: var.$base-tab_font-size;
+  }
+  @include m.mq(sp) {
+    font-size: var.$base-sp_font-size;
+  }
+  a {
+    text-decoration: underline;
+  }
+  a[target="_blank"] {
+    padding-right: 16px;
+    background: url(../img/externallink_111153.png) right center/14px auto
+      no-repeat;
+  }
+}

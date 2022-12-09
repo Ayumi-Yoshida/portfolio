@@ -1,0 +1,54 @@
+@use '../setting/variable' as var;
+@use '../mixin/' as m;
+
+.portfolio {
+  .js-hide {
+    display: none;
+  }
+  &__bg-color {
+    background-color: var.$color_purple;
+  }
+  &__bg-color.select-bg {
+    background-color: var.$color_other-blue;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-bottom: 40px;
+    @include m.mq(sp) {
+      display: block;
+    }
+  }
+  &__link-item {
+    width: 44%;
+    list-style: none;
+    text-align: center;
+    padding: 40px 16px;
+    @include m.mq(sp) {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  &__link-item > a:hover .portfolio__link-image {
+    box-shadow: 0 0 16px 0 rgb(19 44 100 / 36%);
+    transition: all ease 0.5s;
+  }
+  &__link-image {
+    border: 1px solid var.$color_black;
+    box-shadow: 0 0 8px 0 rgb(19 44 100 / 18%);
+    margin-bottom: 12px;
+  }
+  &__link-image img {
+    height: 46vh;
+    object-fit: contain;
+    @include m.mq(tab) {
+      height: 40vh;
+    }
+  }
+  &__link-label {
+    font-size: var.$base_font-size;
+  }
+}
